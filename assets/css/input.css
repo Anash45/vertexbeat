@@ -1,0 +1,190 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    background-color: #1f2024;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: "Inter", sans-serif;
+}
+
+.std-top{
+    height: 80px;
+    background-image: linear-gradient(to bottom, rgba(31, 32, 36, 1), rgba(25, 26, 29, 1));
+}
+.std-bottom{
+    position: relative;
+}
+.std-content{
+    position: relative;
+    z-index: 1;
+    background-image: linear-gradient(to bottom, rgba(25, 26, 29, 1), rgba(21, 22, 25, 1));
+    border-bottom-right-radius: 40px ;
+}
+.std-b-extra{
+    height: 100%;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(25, 26, 29, 1), rgba(21, 22, 25, 1));
+    width: 50%;
+    left: 0;
+    bottom: 0;
+}
+
+.title-union{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+    height: 150px;
+    width: auto;
+    min-width: 100%;
+}
+.union-side{
+    position: absolute;
+    height: 50%;
+    z-index: 0;
+    right: 0;
+    top: 0;
+    transform: translateX(99%);
+}
+
+.roboto{
+    font-family: "Roboto", sans-serif;
+}
+.inter{
+    font-family: "Inter", sans-serif;
+}
+
+.team-member img{
+    z-index: 1;
+    position: relative;
+}
+.team-member::after{
+    content: "";
+    position: absolute;
+    height: 350px;
+    background-color: #3B82F6;
+    border-radius: 20px;
+    width: 100%;
+    z-index: 0;
+    bottom: 133px;
+    display: none;
+}
+
+.bg-team{
+    position: absolute;
+    height: 350px;
+    background-color: #3B82F6;
+    border-radius: 20px;
+    width: 100%;
+    z-index: 0;
+    bottom: 133px;
+}
+
+.team-member:first-of-type::after{
+    left: 0%;
+}
+
+.team-member:last-of-type::after{
+    right: 0%;
+}
+
+.tb-left{
+    position: relative;
+    min-width: 160px;
+    background-color: #1f2024;
+    border-bottom-right-radius: 40px;
+}
+
+.tb-left-union{
+    position: absolute;
+    height: 50%;
+    width: auto;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    background-size: contain;
+    transform: translateX(100%);
+    background-repeat: no-repeat;
+}
+
+.tb-right-union{
+    position: absolute;
+    height: 50%;
+    width: auto;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    background-size: contain;
+    transform: translateX(-100%);
+    background-repeat: no-repeat;
+}
+
+.tb-right{
+    position: relative;
+    min-width: 400px;
+    background-color: #1f2024;
+    border-bottom-left-radius: 40px;
+}
+/* the slides */
+.slick-slide {
+    margin: 0 16px;
+}
+/* the parent */
+.slick-list {
+    margin: 0 -10px;
+}
+.slick-arrow::before{
+    content: unset !important;
+}
+.carousel-item img{
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.slick-arrow{
+    top: 0;
+    transform: translateY(-175px);
+}
+
+.slick-prev{
+    left: unset;
+    right: 100px;
+}
+.slick-next{
+    left: unset;
+    right: 30px;
+}
+
+.slick-arrow:hover rect{
+    fill: #3B82F6;
+}
+.slick-arrow:hover path{
+    stroke: #ffffff;
+}
+@media (max-width: 768px){
+    .slick-arrow{
+        top: 0;
+        transform: translateY(-70px);
+    }
+}
+@media (max-width: 600px) {
+    .team-member::after{
+        width: 100%;
+        display: block;
+    }
+    .bg-team{
+        display: none;
+    }
+    .tb-left,.tb-right{
+        width: 50%;
+        border-radius: 0 !important;
+        min-width: unset;
+    }
+
+    .tb-left-union,.tb-right-union{
+        display: none;
+    }
+}

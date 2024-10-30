@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Slick CSS -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+        <link href="./assets/css/output.css" rel="stylesheet">
+        <title>Vertex Beat</title>
+    </head>
+
+    <body>
+        <section class="sec-0 pt-3">
+            <div class="container">
+                <div class="relative">
+                    <div class="absolute top-0 flex justify-between top-bar w-full z-50">
+                        <div class="tb-left pb-3 flex justify-start pl-4">
+                            <img src="./assets/img/Union-side-left.png" alt="Union" class="tb-left-union">
+                            <a href="./index.html" class="top-logo flex flex-col justify-center"><img
+                                    src="./assets/img/logo-white.svg" alt="Logo" class="h-[48px]"></a>
+                        </div>
+                        <div class="tb-right pb-3 flex justify-end pr-4">
+                            <img src="./assets/img/Union-side-right.png" alt="Union" class="tb-right-union">
+                            <a href="#" class="top-mic text-right"><svg width="64" height="64" viewBox="0 0 64 64"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="64" height="64" rx="8" fill="#383E42" />
+                                    <path
+                                        d="M31.9974 36.6667C34.9441 36.6667 37.3307 34.28 37.3307 31.3333V24C37.3307 21.0533 34.9441 18.6667 31.9974 18.6667C29.0507 18.6667 26.6641 21.0533 26.6641 24V31.3333C26.6641 34.28 29.0507 36.6667 31.9974 36.6667Z"
+                                        stroke="white" stroke-width="2.25" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M21.8008 28.8667V31.1333C21.8008 36.76 26.3741 41.3333 32.0008 41.3333C37.6274 41.3333 42.2008 36.76 42.2008 31.1333V28.8667"
+                                        stroke="white" stroke-width="2.25" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M30.1445 24.5733C31.3445 24.1333 32.6512 24.1333 33.8512 24.5733"
+                                        stroke="white" stroke-width="2.25" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M30.9375 27.4C31.6442 27.2133 32.3775 27.2133 33.0842 27.4" stroke="white"
+                                        stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M32 41.3333V45.3333" stroke="white" stroke-width="2.25"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-cont sm:pt-0 pt-[70px]">
+                        <img src="./assets/img/Union-side-left.png" alt="Union"
+                            class="absolute top-[70px] h-[50px] z-10 left-0">
+                        <img src="./assets/img/Union-side-right.png" alt="Union"
+                            class="absolute top-[70px] h-[50px] z-10 right-0">
+                        <div class="relative hero-img-cont">
+                            <img src="./assets/img/hero-2-bg.png" alt="Hero2" class="w-full rounded-[40px]">
+                            <div
+                                class="absolute flex justify-between items-center gap-5 bottom-0 left-0 w-full p-4 sm:flex-row flex-col">
+                                <a href="#"
+                                    class="bg-[#3B82F6] leading-[100%] flex gap-[10px] px-6 rounded-full text-white text-[18px] items-center justify-center w-fit sm:py-[18px] py-[12px]">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19 8.5H18V5.5C18 4.70435 17.6839 3.94129 17.1213 3.37868C16.5587 2.81607 15.7956 2.5 15 2.5H5C4.20435 2.5 3.44129 2.81607 2.87868 3.37868C2.31607 3.94129 2 4.70435 2 5.5V17.5C2.00099 17.6974 2.06039 17.8901 2.17072 18.0539C2.28105 18.2176 2.43738 18.345 2.62 18.42C2.73868 18.476 2.86882 18.5034 3 18.5C3.13161 18.5008 3.26207 18.4755 3.38391 18.4258C3.50574 18.376 3.61656 18.3027 3.71 18.21L6.52 15.39H8V16.83C8 17.6256 8.31607 18.3887 8.87868 18.9513C9.44129 19.5139 10.2044 19.83 11 19.83H17.92L20.29 22.21C20.3834 22.3027 20.4943 22.376 20.6161 22.4258C20.7379 22.4755 20.8684 22.5008 21 22.5C21.1312 22.5034 21.2613 22.476 21.38 22.42C21.5626 22.345 21.7189 22.2176 21.8293 22.0539C21.9396 21.8901 21.999 21.6974 22 21.5V11.5C22 10.7044 21.6839 9.94129 21.1213 9.37868C20.5587 8.81607 19.7956 8.5 19 8.5ZM8 11.5V13.39H6.11C5.97839 13.3892 5.84793 13.4145 5.72609 13.4642C5.60426 13.514 5.49344 13.5873 5.4 13.68L4 15.09V5.5C4 5.23478 4.10536 4.98043 4.29289 4.79289C4.48043 4.60536 4.73478 4.5 5 4.5H15C15.2652 4.5 15.5196 4.60536 15.7071 4.79289C15.8946 4.98043 16 5.23478 16 5.5V8.5H11C10.2044 8.5 9.44129 8.81607 8.87868 9.37868C8.31607 9.94129 8 10.7044 8 11.5ZM20 19.09L19 18.09C18.9074 17.9955 18.7969 17.9203 18.6751 17.8688C18.5532 17.8173 18.4223 17.7906 18.29 17.79H11C10.7348 17.79 10.4804 17.6846 10.2929 17.4971C10.1054 17.3096 10 17.0552 10 16.79V11.5C10 11.2348 10.1054 10.9804 10.2929 10.7929C10.4804 10.6054 10.7348 10.5 11 10.5H19C19.2652 10.5 19.5196 10.6054 19.7071 10.7929C19.8946 10.9804 20 11.2348 20 11.5V19.09Z"
+                                            fill="white" />
+                                    </svg>
+                                    <span>Let's Talk</span>
+                                </a>
+                                <div>
+                                    <img src="./assets/img/hero-icons.png" alt="Hero Icons"
+                                        class="sm:h-[64px] h-[48px]">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-6 mt-[60px]">
+                    <h4 class="font-medium roboto text-white text-[24px] md:text-start text-center">Featured and Seen in
+                    </h4>
+                    <div class="flex gap-4 flex-wrap items-center md:justify-between justify-center">
+                        <img src="./assets/img/brand-1.png" class="sm:max-h-[45px] max-h-[36px]" alt="Brand">
+                        <img src="./assets/img/brand-2.png" class="sm:max-h-[45px] max-h-[36px]" alt="Brand">
+                        <img src="./assets/img/brand-3.png" class="sm:max-h-[45px] max-h-[36px]" alt="Brand">
+                        <img src="./assets/img/brand-4.png" class="sm:max-h-[45px] max-h-[36px]" alt="Brand">
+                        <img src="./assets/img/brand-5.png" class="sm:max-h-[45px] max-h-[36px]" alt="Brand">
+                        <img src="./assets/img/brand-6.png" class="sm:max-h-[45px] max-h-[36px]" alt="Brand">
+                        <img src="./assets/img/brand-7.png" class="sm:max-h-[45px] max-h-[36px]" alt="Brand">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec-1">
+            <div class="sec-title-div overflow-x-hidden">
+                <div class="std-top">
+                </div>
+                <div class="std-bottom">
+                    <div class="std-b-extra">
+                    </div>
+                    <div class="container">
+                        <div class="std-content py-2 pr-8 min-w-[fit-content] w-[60%]">
+                            <div class="flex items-center gap-3 relative z-10 justify-between">
+                                <h3 class="font-medium text-white lg:text-[30px] roboto text-[20px]">Tailored AI and
+                                    Avatar Solutions for Your Business</h3>
+                                <img src="./assets/img/arrow-diagonal.svg" alt="Arrow" class="h-[40px] w-[40px]">
+                            </div>
+                            <img src="./assets/img/Union-side.png" alt="Union side" class="union-side">
+                        </div>
+                        <div class="std-blank"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="py-[60px] flex flex-col md:gap-[60px] gap-10">
+                    <div class="flex items-center lg:gap-10 gap-8 lg:flex-row flex-col justify-between">
+                        <div class="flex-grow-0 flex-shrink lg:basis-[47%]">
+                            <img src="./assets/img/img-1.png" alt="Image" class="rounded-[20px] w-full">
+                        </div>
+                        <div class="flex-grow-0 flex-shrink lg:basis-[53%] xxl:pl-8">
+                            <div class="flex flex-col lg:gap-6 gap-4">
+                                <p class="text-[#3B82F6] lg:text-[24px] leading-[110%] text-[18px]">Bring your brand to
+                                    life</p>
+                                <h3 class="text-white lg:text-[48px] leading-[110%] text-[36px] roboto">Personalized
+                                    Avatars</h3>
+                                <p class="text-[rgba(255, 255, 255, 0.7)] lg:text-[24px] sm:text-[20px] xs:text-[16px]">
+                                    We design 3D avatars based on real people, tailored to represent your brand in
+                                    virtual spaces. Whether it’s for client interactions or events, our avatars create a
+                                    personal, engaging experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center lg:gap-10 gap-8 lg:flex-row-reverse flex-col justify-between">
+                        <div class="flex-grow-0 flex-shrink lg:basis-[47%]">
+                            <img src="./assets/img/img-2.png" alt="Image" class="rounded-[20px] w-full">
+                        </div>
+                        <div class="flex-grow-0 flex-shrink lg:basis-[53%] xxl:pr-8">
+                            <div class="flex flex-col lg:gap-6 gap-4">
+                                <p class="text-[#3B82F6] lg:text-[24px] leading-[110%] text-[18px]">Your virtual
+                                    assistant could sound just like your company spokesperson, maintaining consistency
+                                    in branding.</p>
+                                <h3 class="text-white lg:text-[48px] leading-[110%] text-[36px] roboto">Voice Cloning 
+                                </h3>
+                                <p class="text-[rgba(255, 255, 255, 0.7)] lg:text-[24px] sm:text-[20px] xs:text-[16px]">
+                                    We can clone voices, so your avatar sounds exactly how you envision—whether it’s a
+                                    replica of a real person or a distinct brand voice.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center lg:gap-10 gap-8 lg:flex-row flex-col justify-between">
+                        <div class="flex-grow-0 flex-shrink lg:basis-[47%]">
+                            <img src="./assets/img/img-3.png" alt="Image" class="rounded-[20px] w-full">
+                        </div>
+                        <div class="flex-grow-0 flex-shrink lg:basis-[53%] xxl:pl-8">
+                            <div class="flex flex-col lg:gap-6 gap-4">
+                                <p class="text-[#3B82F6] lg:text-[24px] leading-[110%] text-[18px]">Your avatar can
+                                    answer customer service queries in the same style and tone your support team would
+                                    use.</p>
+                                <h3 class="text-white lg:text-[48px] leading-[110%] text-[36px] roboto">Fine-tuning
+                                    LLMs </h3>
+                                <p class="text-[rgba(255, 255, 255, 0.7)] lg:text-[24px] sm:text-[20px] xs:text-[16px]">
+                                    Your avatar can answer customer service queries in the same style and tone your
+                                    support team would use.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center lg:gap-10 gap-8 lg:flex-row-reverse flex-col justify-between">
+                        <div class="flex-grow-0 flex-shrink lg:basis-[47%]">
+                            <img src="./assets/img/img-4.png" alt="Image" class="rounded-[20px] w-full">
+                        </div>
+                        <div class="flex-grow-0 flex-shrink lg:basis-[53%] xxl:pr-8">
+                            <div class="flex flex-col lg:gap-6 gap-4">
+                                <p class="text-[#3B82F6] lg:text-[24px] leading-[110%] text-[18px]">If a client asks
+                                    about your latest product, the avatar instantly pulls the information from your
+                                    internal documents and responds accurately.</p>
+                                <h3 class="text-white lg:text-[48px] leading-[110%] text-[36px] roboto">RAG
+                                    (Retrieval-Augmented Generation)</h3>
+                                <p class="text-[rgba(255, 255, 255, 0.7)] lg:text-[24px] sm:text-[20px] xs:text-[16px]">
+                                    Our AI can access and use your company’s knowledge base, providing real-time,
+                                    up-to-date responses for users.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center lg:gap-10 gap-8 lg:flex-row flex-col justify-between">
+                        <div class="flex-grow-0 flex-shrink lg:basis-[47%]">
+                            <img src="./assets/img/img-5.png" alt="Image" class="rounded-[20px] w-full">
+                        </div>
+                        <div class="flex-grow-0 flex-shrink lg:basis-[53%] xxl:pl-8">
+                            <div class="flex flex-col lg:gap-6 gap-4">
+                                <p class="text-[#3B82F6] lg:text-[24px] leading-[110%] text-[18px]">Your avatar can
+                                    answer customer service queries in the same style and tone your support team would
+                                    use.</p>
+                                <h3 class="text-white lg:text-[48px] leading-[110%] text-[36px] roboto">Text to Speech
+                                    (TTS)</h3>
+                                <p class="text-[rgba(255, 255, 255, 0.7)] lg:text-[24px] sm:text-[20px] xs:text-[16px]">
+                                    Bring your character to life with natural, AI-generated voices that enhance user
+                                    interaction.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center lg:gap-10 gap-8 lg:flex-row-reverse flex-col justify-between">
+                        <div class="flex-grow-0 flex-shrink lg:basis-[47%]">
+                            <img src="./assets/img/img-6.png" alt="Image" class="rounded-[20px] w-full">
+                        </div>
+                        <div class="flex-grow-0 flex-shrink lg:basis-[53%] xxl:pr-8">
+                            <div class="flex flex-col lg:gap-6 gap-4">
+                                <p class="text-[#3B82F6] lg:text-[24px] leading-[110%] text-[18px]">During a meeting,
+                                    your AI assistant can listen, transcribe the conversation, and send a written
+                                    summary to everyone afterward.</p>
+                                <h3 class="text-white lg:text-[48px] leading-[110%] text-[36px] roboto">Speech to Text
+                                    (STT)</h3>
+                                <p class="text-[rgba(255, 255, 255, 0.7)] lg:text-[24px] sm:text-[20px] xs:text-[16px]">
+                                    Convert spoken language into text for real-time documentation or communication.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec-2">
+            <div class="sec-title-div overflow-x-hidden">
+                <div class="std-top">
+                </div>
+                <div class="std-bottom">
+                    <div class="std-b-extra">
+                    </div>
+                    <div class="container">
+                        <div class="std-content py-2 pr-8 min-w-[fit-content] w-[60%]">
+                            <div class="flex items-center gap-3 relative z-10 justify-between">
+                                <h3 class="font-medium text-white lg:text-[30px] roboto text-[20px]">Benefits of an
+                                    AI-Powered Avatar</h3>
+                                <img src="./assets/img/arrow-diagonal.svg" alt="Arrow" class="h-[40px] w-[40px]">
+                            </div>
+                            <img src="./assets/img/Union-side.png" alt="Union side" class="union-side">
+                        </div>
+                        <div class="std-blank"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="py-[60px] flex flex-col md:gap-[120px] gap-[60px]">
+                    <div class="flex gap-6 justify-between flex-wrap">
+                        <div
+                            class="flex-grow flex-shrink-0 basis-[300px] bg-[#111214] p-6 rounded-[16px] flex flex-col gap-6">
+                            <img src="./assets/img/icon-1.svg" alt="Icon" class="w-[80px]">
+                            <div class="flex flex-col gap-4">
+                                <h5 class="font-medium text-[24px] roboto text-white leading-[100%]">24/7 Availability
+                                </h5>
+                                <p class="text-[rgba(255, 255, 255, 0.7)] text-[18px]">Always accessible, providing
+                                    support and solutions around the clock.</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex-grow flex-shrink-0 basis-[300px] bg-[#3B82F6] p-6 rounded-[16px] flex flex-col gap-6">
+                            <img src="./assets/img/icon-2.svg" alt="Icon" class="w-[80px]">
+                            <div class="flex flex-col gap-4">
+                                <h5 class="font-medium text-[24px] roboto text-white leading-[100%]">Increased User
+                                    Engagement </h5>
+                                <p class="text-[rgba(255, 255, 255, 0.7)] text-[18px]">Captures attention and interacts
+                                    dynamically with customers in real time.</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex-grow flex-shrink-0 basis-[300px] bg-[#111214] p-6 rounded-[16px] flex flex-col gap-6">
+                            <img src="./assets/img/icon-3.svg" alt="Icon" class="w-[80px]">
+                            <div class="flex flex-col gap-4">
+                                <h5 class="font-medium text-[24px] roboto text-white leading-[100%]">Instant Solutions
+                                </h5>
+                                <p class="text-[rgba(255, 255, 255, 0.7)] text-[18px]">Provides quick, accurate
+                                    responses, improving customer satisfaction.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:py-[100px] py-[60px] flex flex-col gap-[80px]">
+                    <div class="flex flex-col gap-4 w-[425px] max-w-full">
+                        <h5 class="font-medium lg:text-[48px] text-[36px] roboto text-white leading-[120%]">
+                            AI Avatars in Action </h5>
+                        <p class="text-white text-[18px]">From Healthcare to Personal Assistance, see how AI avatars transform industries.</p>
+                    </div>
+                    <div id="carousel1" class="slick-carousel">
+                        <div class="carousel-item">
+                            <div class="flex gap-4 flex-col">
+                                <img src="./assets/img/slider-1.png" class="d-block w-100 rounded-[16px]" alt="Slider">
+                                <a href="#" class="px-6 py-2 rounded-full border border-[rgba(114, 114, 114, 1)] text-[rgba(255, 255, 255, 0.7)] text-[14px] text-center w-fit">Healthcare</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="flex gap-4 flex-col">
+                                <img src="./assets/img/slider-2.png" class="d-block w-100 rounded-[16px]" alt="Slider">
+                                <a href="#" class="px-6 py-2 rounded-full border border-[rgba(114, 114, 114, 1)] text-[rgba(255, 255, 255, 0.7)] text-[14px] text-center w-fit">Healthcare</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="flex gap-4 flex-col">
+                                <img src="./assets/img/slider-3.png" class="d-block w-100 rounded-[16px]" alt="Slider">
+                                <a href="#" class="px-6 py-2 rounded-full border border-[rgba(114, 114, 114, 1)] text-[rgba(255, 255, 255, 0.7)] text-[14px] text-center w-fit">Healthcare</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="flex gap-4 flex-col">
+                                <img src="./assets/img/slider-1.png" class="d-block w-100 rounded-[16px]" alt="Slider">
+                                <a href="#" class="px-6 py-2 rounded-full border border-[rgba(114, 114, 114, 1)] text-[rgba(255, 255, 255, 0.7)] text-[14px] text-center w-fit">Healthcare</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="flex gap-4 flex-col">
+                                <img src="./assets/img/slider-2.png" class="d-block w-100 rounded-[16px]" alt="Slider">
+                                <a href="#" class="px-6 py-2 rounded-full border border-[rgba(114, 114, 114, 1)] text-[rgba(255, 255, 255, 0.7)] text-[14px] text-center w-fit">Healthcare</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec-3">
+            <div class="sec-title-div overflow-x-hidden">
+                <div class="std-top">
+                </div>
+                <div class="std-bottom">
+                    <div class="std-b-extra">
+                    </div>
+                    <div class="container">
+                        <div class="std-content py-2 pr-8 min-w-[fit-content] w-[60%]">
+                            <div class="flex items-center gap-3 relative z-10 justify-between">
+                                <h3 class="font-medium text-white lg:text-[30px] roboto text-[20px]">Seamless
+                                    Integration Across Multiple Platforms</h3>
+                                <img src="./assets/img/arrow-diagonal.svg" alt="Arrow" class="h-[40px] w-[40px]">
+                            </div>
+                            <img src="./assets/img/Union-side.png" alt="Union side" class="union-side">
+                        </div>
+                        <div class="std-blank"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="pt-[60px] pb-[120px] flex flex-col md:gap-[120px] gap-[60px]">
+                    <div class="flex gap-6 justify-between flex-wrap">
+                        <div
+                            class="flex-grow flex-shrink-0 xl:basis-[500px] sm:basis-[400px] basis-[100%] bg-[#111214] p-6 rounded-[16px] flex flex-col gap-6">
+                            <img src="./assets/img/icon-4.svg" alt="Icon" class="w-[80px]">
+                            <div class="flex flex-col gap-5">
+                                <div class="flex flex-col gap-2">
+                                    <h5 class="font-medium text-[24px] roboto text-white leading-[100%]">Web </h5>
+                                    <p class="text-white text-[18px]">Bring interactive AI avatars directly to your
+                                        website, offering real-time support and engagement.</p>
+                                </div>
+                                <p class="text-[rgba(255, 255, 255, 0.7)] text-[16px]">A customer visiting your site can
+                                    chat with an AI avatar that answers questions, provides product </p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex-grow flex-shrink-0 xl:basis-[500px] sm:basis-[400px] basis-[100%] bg-[#3B82F6] p-6 rounded-[16px] flex flex-col gap-6">
+                            <img src="./assets/img/icon-5.svg" alt="Icon" class="w-[80px]">
+                            <div class="flex flex-col gap-5">
+                                <div class="flex flex-col gap-2">
+                                    <h5 class="font-medium text-[24px] roboto text-white leading-[100%]">Mobile Apps
+                                    </h5>
+                                    <p class="text-white text-[18px]">Integrate AI avatars into your apps to enhance
+                                        user experience, provide assistance, and deliver personalized content.</p>
+                                </div>
+                                <p class="text-[rgba(255, 255, 255, 0.7)] text-[16px]">An AI-powered virtual assistant
+                                    within a fitness app can help users track workouts, provide motivation, and answer
+                                    health-related questions.</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex-grow flex-shrink-0 xl:basis-[500px] sm:basis-[400px] basis-[100%] bg-[#111214] p-6 rounded-[16px] flex flex-col gap-6">
+                            <img src="./assets/img/icon-6.svg" alt="Icon" class="w-[80px]">
+                            <div class="flex flex-col gap-5">
+                                <div class="flex flex-col gap-2">
+                                    <h5 class="font-medium text-[24px] roboto text-white leading-[100%]">KIOSK </h5>
+                                    <p class="text-white text-[18px]">Utilize AI avatars in physical kiosks for customer
+                                        service, information desks, or self-checkout stations.</p>
+                                </div>
+                                <p class="text-[rgba(255, 255, 255, 0.7)] text-[16px]">At a retail store, a customer can
+                                    interact with an AI avatar on a self-service kiosk to find product information,
+                                    check stock availability, and even complete purchases.</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex-grow flex-shrink-0 xl:basis-[500px] sm:basis-[400px] basis-[100%] bg-[#111214] p-6 rounded-[16px] flex flex-col gap-6">
+                            <img src="./assets/img/icon-7.svg" alt="Icon" class="w-[80px]">
+                            <div class="flex flex-col gap-5">
+                                <div class="flex flex-col gap-2">
+                                    <h5 class="font-medium text-[24px] roboto text-white leading-[100%]">Holo Displays
+                                    </h5>
+                                    <p class="text-white text-[18px]">Bring your AI avatar to life in a 3D holographic
+                                        display for a futuristic, immersive experience.</p>
+                                </div>
+                                <p class="text-[rgba(255, 255, 255, 0.7)] text-[16px]">In a trade show booth, a
+                                    holographic avatar can engage with visitors, explain product features, and answer
+                                    frequently asked questions, creating a memorable brand interaction.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-[60px] bg-[rgba(255,255,255,0.05)]">
+            <div class="container">
+                <div class="flex flex-wrap lg:flex-nowrap items-center gap-[100px]">
+                    <div class="lg:basis-[45%] basis-[100%] flex-grow-0 flex-shrink-0">
+                        <img src="./assets/img/img-8.png" alt="Image" class="w-full">
+                    </div>
+                    <div class="flex flex-grow flex-shrink-0 flex-col gap-10 basis-[50%]">
+                        <div class="flex flex-col gap-5">
+                            <div class="flex flex-col gap-4">
+                                <h5 class="font-medium lg:text-[48px] text-[36px] roboto text-white leading-[120%]">
+                                    Ready to Elevate Your Business with AI? </h5>
+                                <p class="text-[rgba(255, 255, 255, 0.7)] text-[18px]">Book a meeting today to see how
+                                    our AI-powered avatars can transform your industry, delivering personalized
+                                    interaction and exceptional user experiences. Let’s bring your vision to life.</p>
+                            </div>
+                            <p class="text-[rgba(255, 255, 255, 0.7)] text-[16px]">Example: <i>Whether you're in
+                                    healthcare, education, or another industry, our AI avatars can deliver the exact
+                                    experience you need to grow your business.</i></p>
+                        </div>
+                        <a href="#"
+                            class="bg-[#3B82F6] leading-[100%] flex gap-[10px] px-6 rounded-full text-white text-[18px] items-center justify-center w-fit py-[18px]">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19 8H18V5C18 4.20435 17.6839 3.44129 17.1213 2.87868C16.5587 2.31607 15.7956 2 15 2H5C4.20435 2 3.44129 2.31607 2.87868 2.87868C2.31607 3.44129 2 4.20435 2 5V17C2.00099 17.1974 2.06039 17.3901 2.17072 17.5539C2.28105 17.7176 2.43738 17.845 2.62 17.92C2.73868 17.976 2.86882 18.0034 3 18C3.13161 18.0008 3.26207 17.9755 3.38391 17.9258C3.50574 17.876 3.61656 17.8027 3.71 17.71L6.52 14.89H8V16.33C8 17.1256 8.31607 17.8887 8.87868 18.4513C9.44129 19.0139 10.2044 19.33 11 19.33H17.92L20.29 21.71C20.3834 21.8027 20.4943 21.876 20.6161 21.9258C20.7379 21.9755 20.8684 22.0008 21 22C21.1312 22.0034 21.2613 21.976 21.38 21.92C21.5626 21.845 21.7189 21.7176 21.8293 21.5539C21.9396 21.3901 21.999 21.1974 22 21V11C22 10.2044 21.6839 9.44129 21.1213 8.87868C20.5587 8.31607 19.7956 8 19 8ZM8 11V12.89H6.11C5.97839 12.8892 5.84793 12.9145 5.72609 12.9642C5.60426 13.014 5.49344 13.0873 5.4 13.18L4 14.59V5C4 4.73478 4.10536 4.48043 4.29289 4.29289C4.48043 4.10536 4.73478 4 5 4H15C15.2652 4 15.5196 4.10536 15.7071 4.29289C15.8946 4.48043 16 4.73478 16 5V8H11C10.2044 8 9.44129 8.31607 8.87868 8.87868C8.31607 9.44129 8 10.2044 8 11ZM20 18.59L19 17.59C18.9074 17.4955 18.7969 17.4203 18.6751 17.3688C18.5532 17.3173 18.4223 17.2906 18.29 17.29H11C10.7348 17.29 10.4804 17.1846 10.2929 16.9971C10.1054 16.8096 10 16.5552 10 16.29V11C10 10.7348 10.1054 10.4804 10.2929 10.2929C10.4804 10.1054 10.7348 10 11 10H19C19.2652 10 19.5196 10.1054 19.7071 10.2929C19.8946 10.4804 20 10.7348 20 11V18.59Z"
+                                    fill="white" />
+                            </svg>
+                            <span>Start Conversation</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="lg:py-[200px] py-[100px]">
+            <div class="container relative">
+                <div class="bg-team"></div>
+                <div class="flex content-end relative z-10 justify-around gap-[60px] team-members sm:flex-row flex-col">
+                    <div class="flex flex-col gap-5 items-center team-member justify-end relative">
+                        <img src="./assets/img/person-1.png" alt="Person" class="w-[340px] max-w-full">
+                        <div class="flex flex-col gap-[13px] text-white text-center">
+                            <div class="flex flex-col gap-[6px]">
+                                <h3 class="font-medium roboto text-[24px]">Oliver Quenn</h3>
+                                <p class="text-[16px]">Lead Engineer</p>
+                            </div>
+                            <div class="flex gap-5 items-center justify-center">
+                                <a href="#" class="person-links">
+                                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17.2097 33C26.0974 33 33.3023 25.8366 33.3023 17C33.3023 8.16344 26.0974 1 17.2097 1C8.32207 1 1.11719 8.16344 1.11719 17C1.11719 25.8366 8.32207 33 17.2097 33Z"
+                                            stroke="white" stroke-width="0.643853" />
+                                        <path
+                                            d="M16.3741 21.7306L16.3609 17.7005H14.6367V15.9734H16.3609V14.8219C16.3609 13.2679 17.3216 12.519 18.7055 12.519C19.3684 12.519 19.9381 12.5685 20.1041 12.5906V14.2146L19.1443 14.215C18.3917 14.215 18.246 14.5733 18.246 15.099V15.9734H20.3841L19.8093 17.7005H18.246V21.7306H16.3741Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="person-links">
+                                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.9988 33C25.8865 33 33.0914 25.8366 33.0914 17C33.0914 8.16344 25.8865 1 16.9988 1C8.11113 1 0.90625 8.16344 0.90625 17C0.90625 25.8366 8.11113 33 16.9988 33Z"
+                                            stroke="white" stroke-width="0.643853" />
+                                        <g clip-path="url(#clip0_4012_4238)">
+                                            <path
+                                                d="M19.4135 12.2021H14.5858C13.2526 12.2021 12.1719 13.2767 12.1719 14.6021V19.4021C12.1719 20.7276 13.2526 21.8021 14.5858 21.8021H19.4135C20.7467 21.8021 21.8274 20.7276 21.8274 19.4021V14.6021C21.8274 13.2767 20.7467 12.2021 19.4135 12.2021Z"
+                                                stroke="white" stroke-width="1.28771" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M18.9312 16.6999C18.9908 17.0994 18.9221 17.5074 18.735 17.8658C18.548 18.2243 18.252 18.515 17.8892 18.6965C17.5263 18.8781 17.1152 18.9413 16.7142 18.8771C16.3131 18.813 15.9427 18.6247 15.6555 18.3392C15.3682 18.0536 15.1789 17.6853 15.1144 17.2866C15.0498 16.8878 15.1134 16.479 15.296 16.1183C15.4786 15.7576 15.771 15.4633 16.1315 15.2773C16.4921 15.0913 16.9024 15.0231 17.3042 15.0823C17.7141 15.1427 18.0935 15.3326 18.3865 15.6239C18.6794 15.9152 18.8704 16.2924 18.9312 16.6999Z"
+                                                stroke="white" stroke-width="1.28771" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <ellipse cx="19.654" cy="14.3606" rx="0.724335" ry="0.72" fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_4012_4238">
+                                                <rect width="11.5866" height="11.52" fill="white"
+                                                    transform="translate(11.207 11.2412)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                                <a href="#" class="person-links">
+                                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.7879 33C25.6755 33 32.8804 25.8366 32.8804 17C32.8804 8.16344 25.6755 1 16.7879 1C7.9002 1 0.695312 8.16344 0.695312 17C0.695312 25.8366 7.9002 33 16.7879 33Z"
+                                            stroke="white" stroke-width="0.643853" />
+                                        <path
+                                            d="M21.477 14.0237C21.1322 14.1965 20.7873 14.254 20.385 14.3116C20.7873 14.0813 21.0747 13.7359 21.1896 13.2753C20.8448 13.5056 20.4425 13.6207 19.9827 13.7359C19.6378 13.3904 19.1206 13.1602 18.6033 13.1602C17.6263 13.1602 16.7642 14.0237 16.7642 15.06C16.7642 15.2328 16.7642 15.3479 16.8216 15.463C15.2699 15.4055 13.833 14.657 12.9135 13.5056C12.741 13.7934 12.6836 14.0813 12.6836 14.4843C12.6836 15.1176 13.0284 15.6933 13.5457 16.0388C13.2583 16.0388 12.9709 15.9236 12.6836 15.8085C12.6836 16.7296 13.3158 17.4781 14.1779 17.6508C14.0055 17.7083 13.833 17.7083 13.6606 17.7083C13.5457 17.7083 13.4307 17.7083 13.3158 17.6508C13.5457 18.3992 14.2353 18.9749 15.0974 18.9749C14.4652 19.4931 13.6606 19.7809 12.741 19.7809C12.5686 19.7809 12.4537 19.7809 12.2812 19.7809C13.1434 20.2991 14.1204 20.6445 15.1549 20.6445C18.6033 20.6445 20.4999 17.7659 20.4999 15.2903C20.4999 15.2328 20.4999 15.1176 20.4999 15.06C20.9023 14.7722 21.2471 14.4267 21.477 14.0237Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-5 items-center team-member justify-end relative">
+                        <img src="./assets/img/person-2.png" alt="Person" class="w-[340px] max-w-full">
+                        <div class="flex flex-col gap-[13px] text-white text-center">
+                            <div class="flex flex-col gap-[6px]">
+                                <h3 class="font-medium roboto text-[24px]">Falicity Smoke</h3>
+                                <p class="text-[16px]">Lead Engineer</p>
+                            </div>
+                            <div class="flex gap-5 items-center justify-center">
+                                <a href="#" class="person-links">
+                                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17.2097 33C26.0974 33 33.3023 25.8366 33.3023 17C33.3023 8.16344 26.0974 1 17.2097 1C8.32207 1 1.11719 8.16344 1.11719 17C1.11719 25.8366 8.32207 33 17.2097 33Z"
+                                            stroke="white" stroke-width="0.643853" />
+                                        <path
+                                            d="M16.3741 21.7306L16.3609 17.7005H14.6367V15.9734H16.3609V14.8219C16.3609 13.2679 17.3216 12.519 18.7055 12.519C19.3684 12.519 19.9381 12.5685 20.1041 12.5906V14.2146L19.1443 14.215C18.3917 14.215 18.246 14.5733 18.246 15.099V15.9734H20.3841L19.8093 17.7005H18.246V21.7306H16.3741Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="person-links">
+                                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.9988 33C25.8865 33 33.0914 25.8366 33.0914 17C33.0914 8.16344 25.8865 1 16.9988 1C8.11113 1 0.90625 8.16344 0.90625 17C0.90625 25.8366 8.11113 33 16.9988 33Z"
+                                            stroke="white" stroke-width="0.643853" />
+                                        <g clip-path="url(#clip0_4012_4238)">
+                                            <path
+                                                d="M19.4135 12.2021H14.5858C13.2526 12.2021 12.1719 13.2767 12.1719 14.6021V19.4021C12.1719 20.7276 13.2526 21.8021 14.5858 21.8021H19.4135C20.7467 21.8021 21.8274 20.7276 21.8274 19.4021V14.6021C21.8274 13.2767 20.7467 12.2021 19.4135 12.2021Z"
+                                                stroke="white" stroke-width="1.28771" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M18.9312 16.6999C18.9908 17.0994 18.9221 17.5074 18.735 17.8658C18.548 18.2243 18.252 18.515 17.8892 18.6965C17.5263 18.8781 17.1152 18.9413 16.7142 18.8771C16.3131 18.813 15.9427 18.6247 15.6555 18.3392C15.3682 18.0536 15.1789 17.6853 15.1144 17.2866C15.0498 16.8878 15.1134 16.479 15.296 16.1183C15.4786 15.7576 15.771 15.4633 16.1315 15.2773C16.4921 15.0913 16.9024 15.0231 17.3042 15.0823C17.7141 15.1427 18.0935 15.3326 18.3865 15.6239C18.6794 15.9152 18.8704 16.2924 18.9312 16.6999Z"
+                                                stroke="white" stroke-width="1.28771" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <ellipse cx="19.654" cy="14.3606" rx="0.724335" ry="0.72" fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_4012_4238">
+                                                <rect width="11.5866" height="11.52" fill="white"
+                                                    transform="translate(11.207 11.2412)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                                <a href="#" class="person-links">
+                                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.7879 33C25.6755 33 32.8804 25.8366 32.8804 17C32.8804 8.16344 25.6755 1 16.7879 1C7.9002 1 0.695312 8.16344 0.695312 17C0.695312 25.8366 7.9002 33 16.7879 33Z"
+                                            stroke="white" stroke-width="0.643853" />
+                                        <path
+                                            d="M21.477 14.0237C21.1322 14.1965 20.7873 14.254 20.385 14.3116C20.7873 14.0813 21.0747 13.7359 21.1896 13.2753C20.8448 13.5056 20.4425 13.6207 19.9827 13.7359C19.6378 13.3904 19.1206 13.1602 18.6033 13.1602C17.6263 13.1602 16.7642 14.0237 16.7642 15.06C16.7642 15.2328 16.7642 15.3479 16.8216 15.463C15.2699 15.4055 13.833 14.657 12.9135 13.5056C12.741 13.7934 12.6836 14.0813 12.6836 14.4843C12.6836 15.1176 13.0284 15.6933 13.5457 16.0388C13.2583 16.0388 12.9709 15.9236 12.6836 15.8085C12.6836 16.7296 13.3158 17.4781 14.1779 17.6508C14.0055 17.7083 13.833 17.7083 13.6606 17.7083C13.5457 17.7083 13.4307 17.7083 13.3158 17.6508C13.5457 18.3992 14.2353 18.9749 15.0974 18.9749C14.4652 19.4931 13.6606 19.7809 12.741 19.7809C12.5686 19.7809 12.4537 19.7809 12.2812 19.7809C13.1434 20.2991 14.1204 20.6445 15.1549 20.6445C18.6033 20.6445 20.4999 17.7659 20.4999 15.2903C20.4999 15.2328 20.4999 15.1176 20.4999 15.06C20.9023 14.7722 21.2471 14.4267 21.477 14.0237Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="py-5">
+            <div class="container">
+                <div class="flex flex-col lg:gap-[48px] gap-[36px]">
+                    <div class="flex flex-wrap sm:gap-[30px] gap-[40px] justify-between sm:flex-row flex-col">
+                        <div class="f-logo">
+                            <a href="./index.html"><img src="./assets/img/logo-white.svg" alt="Logo"
+                                    class="h-[48px]"></a>
+                        </div>
+                        <div class="flex flex-col gap-7 flex-grow-0 flex-shrink basis-[160px]">
+                            <h4 class="text-white roboto font-medium text-[20px]">Products</h4>
+                            <ul class="flex flex-col gap-3 text-[rgba(255, 255, 255, 0.7)]">
+                                <li><a href="#" class="text-[16px]">Home</a></li>
+                                <li><a href="#" class="text-[16px]">Features</a></li>
+                                <li><a href="#" class="text-[16px]">Pricing</a></li>
+                                <li><a href="#" class="text-[16px]">Shop</a></li>
+                                <li><a href="#" class="text-[16px]">Support</a></li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-col gap-7 flex-grow-0 flex-shrink basis-[160px]">
+                            <h4 class="text-white roboto font-medium text-[20px]">Company</h4>
+                            <ul class="flex flex-col gap-3 text-[rgba(255, 255, 255, 0.7)]">
+                                <li><a href="#" class="text-[16px]">About us</a></li>
+                                <li><a href="#" class="text-[16px]">Blog</a></li>
+                                <li><a href="#" class="text-[16px]">Press</a></li>
+                                <li><a href="#" class="text-[16px]">Post Details</a></li>
+                                <li><a href="#" class="text-[16px]">Privacy</a></li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-col gap-[26px] flex-grow-0 flex-shrink sm:basis-[530px]">
+                            <h4 class="text-white roboto font-medium lg:text-[40px] text-[32px]">Stay in the loop with
+                                our weekly Newsletter</h4>
+                            <form method="post" class="f-inp-cont relative sm:w-fit">
+                                <input type="text" name="Email" placeholder="Enter your email"
+                                    class="text-white bg-[rgba(254,254,254,0.15)] sm:w-[370px] w-full max-w-full leading-[100%] focus:outline-none text-[16px] rounded-[12px] py-[16px] pr-[58px] pl-4 border border-solid border-[rgba(0,0,0,0.15)]">
+                                <button class="absolute right-[8px] top-[50%] translate-y-[-50%]"><img
+                                        src="./assets/img/search-01.svg" alt="Icon"
+                                        class="h-[42px] w-[42px] rounded-[7px]"></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="f-bottom border-t border-[rgba(255, 255, 255, 0.2)] border-solid pt-6">
+                        <div
+                            class="flex justify-between items-center text-white sm:text-start text-center sm:flex-row flex-col gap-4">
+                            <span>Copyright © 2024 AI. All Right Reserved</span>
+                            <div class="flex gap-3 items-center">
+                                <a href="#">Terms & Conditions</a>
+                                <span>|</span>
+                                <a href="#">Privacy</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body><!-- Slick JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+    <script src="./assets/js/script.js"></script>
+</html>
