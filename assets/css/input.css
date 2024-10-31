@@ -124,7 +124,7 @@ body{
 
 .tb-right{
     position: relative;
-    min-width: 400px;
+    min-width: 250px;
     background-color: #1f2024;
     border-bottom-left-radius: 40px;
 }
@@ -164,6 +164,16 @@ body{
 .slick-arrow:hover path{
     stroke: #ffffff;
 }
+@media (max-width: 992px){
+    .tb-right{
+        width: 100px;
+        min-width: unset;
+    }
+    .tb-left{
+        width: 70px;
+        min-width: unset;
+    }
+}
 @media (max-width: 768px){
     .slick-arrow{
         top: 0;
@@ -178,13 +188,8 @@ body{
     .bg-team{
         display: none;
     }
-    .tb-left,.tb-right{
-        width: 50%;
-        border-radius: 0 !important;
-        min-width: unset;
-    }
 
-    .tb-left-union,.tb-right-union{
+    /* .tb-left-union,.tb-right-union{
         display: none;
-    }
+    } */
 }
