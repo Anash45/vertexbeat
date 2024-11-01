@@ -670,10 +670,6 @@ video {
   height: 48px;
 }
 
-.max-h-\[36px\] {
-  max-height: 36px;
-}
-
 .w-\[340px\] {
   width: 340px;
 }
@@ -863,6 +859,10 @@ video {
 
 .gap-\[80px\] {
   gap: 80px;
+}
+
+.overflow-auto {
+  overflow: auto;
 }
 
 .overflow-x-hidden {
@@ -1073,29 +1073,29 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-body{
+body {
   background-color: #1f2024;
   color: rgba(255, 255, 255, 0.7);
   font-family: "Inter", sans-serif;
 }
 
-.std-top{
+.std-top {
   height: 80px;
   background-image: linear-gradient(to bottom, rgba(31, 32, 36, 1), rgba(25, 26, 29, 1));
 }
 
-.std-bottom{
+.std-bottom {
   position: relative;
 }
 
-.std-content{
+.std-content {
   position: relative;
   z-index: 1;
   background-image: linear-gradient(to bottom, rgba(25, 26, 29, 1), rgba(21, 22, 25, 1));
-  border-bottom-right-radius: 40px ;
+  border-bottom-right-radius: 40px;
 }
 
-.std-b-extra{
+.std-b-extra {
   height: 100%;
   position: absolute;
   background-image: linear-gradient(to bottom, rgba(25, 26, 29, 1), rgba(21, 22, 25, 1));
@@ -1104,7 +1104,7 @@ body{
   bottom: 0;
 }
 
-.title-union{
+.title-union {
   position: absolute;
   left: 0;
   width: 100%;
@@ -1115,7 +1115,7 @@ body{
   min-width: 100%;
 }
 
-.union-side{
+.union-side {
   position: absolute;
   height: 50%;
   z-index: 0;
@@ -1124,20 +1124,20 @@ body{
   transform: translateX(99%);
 }
 
-.roboto{
+.roboto {
   font-family: "Roboto", sans-serif;
 }
 
-.inter{
+.inter {
   font-family: "Inter", sans-serif;
 }
 
-.team-member img{
+.team-member img {
   z-index: 1;
   position: relative;
 }
 
-.team-member::after{
+.team-member::after {
   content: "";
   position: absolute;
   height: 350px;
@@ -1149,7 +1149,7 @@ body{
   display: none;
 }
 
-.bg-team{
+.bg-team {
   position: absolute;
   height: 350px;
   background-color: #3B82F6;
@@ -1159,22 +1159,22 @@ body{
   bottom: 133px;
 }
 
-.team-member:first-of-type::after{
+.team-member:first-of-type::after {
   left: 0%;
 }
 
-.team-member:last-of-type::after{
+.team-member:last-of-type::after {
   right: 0%;
 }
 
-.tb-left{
+.tb-left {
   position: relative;
   min-width: 160px;
   background-color: #1f2024;
   border-bottom-right-radius: 40px;
 }
 
-.tb-left-union{
+.tb-left-union {
   position: absolute;
   height: 50%;
   width: auto;
@@ -1186,7 +1186,7 @@ body{
   background-repeat: no-repeat;
 }
 
-.tb-right-union{
+.tb-right-union {
   position: absolute;
   height: 50%;
   width: auto;
@@ -1198,7 +1198,7 @@ body{
   background-repeat: no-repeat;
 }
 
-.tb-right{
+.tb-right {
   position: relative;
   min-width: 250px;
   background-color: #1f2024;
@@ -1217,41 +1217,42 @@ body{
   margin: 0 -10px;
 }
 
-.slick-arrow::before{
+.slick-arrow::before {
   content: unset !important;
 }
 
-.carousel-item img{
+.carousel-item img {
   aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.slick-arrow{
+.slick-arrow {
   top: 0;
   transform: translateY(-175px);
 }
 
-.slick-prev{
+.slick-prev {
   left: unset;
   right: 100px;
 }
 
-.slick-next{
+.slick-next {
   left: unset;
   right: 30px;
 }
 
-.slick-arrow:hover rect{
+.slick-arrow:hover rect {
   fill: #3B82F6;
 }
 
-.slick-arrow:hover path{
+.slick-arrow:hover path {
   stroke: #ffffff;
 }
 
-.hero-img{
-  aspect-ratio: 7/5;
+.hero-img {
+  width: 100%;
+  height: calc(100vh - 24px);
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
@@ -1260,38 +1261,46 @@ body{
   z-index: 0;
 }
 
-.hs-item{
+.hs-item {
   position: relative;
 }
 
-@media (max-width: 992px){
-  .tb-right{
+.scrollbar-none {
+  scrollbar-width: none;
+}
+
+@media (max-width: 992px) {
+  .tb-right {
     width: 100px;
     min-width: unset;
     border-bottom-left-radius: 20px;
   }
 
-  .tb-left{
+  .tb-left {
     width: 80px;
     min-width: unset;
     border-bottom-right-radius: 20px;
   }
+
+  .hero-img{
+    height: 80vh;
+  }
 }
 
-@media (max-width: 768px){
-  .slick-arrow{
+@media (max-width: 768px) {
+  .slick-arrow {
     top: 0;
     transform: translateY(-70px);
   }
 }
 
 @media (max-width: 600px) {
-  .team-member::after{
+  .team-member::after {
     width: 100%;
     display: block;
   }
 
-  .bg-team{
+  .bg-team {
     display: none;
   }
 
@@ -1312,12 +1321,12 @@ body{
 }
 
 @media (min-width: 600px) {
-  .sm\:h-\[64px\] {
-    height: 64px;
+  .sm\:h-\[45px\] {
+    height: 45px;
   }
 
-  .sm\:max-h-\[45px\] {
-    max-height: 45px;
+  .sm\:h-\[64px\] {
+    height: 64px;
   }
 
   .sm\:w-\[370px\] {
@@ -1398,6 +1407,10 @@ body{
 }
 
 @media (min-width: 992px) {
+  .lg\:absolute {
+    position: absolute;
+  }
+
   .lg\:basis-\[45\%\] {
     flex-basis: 45%;
   }

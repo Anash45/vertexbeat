@@ -3,26 +3,30 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-body{
+
+body {
     background-color: #1f2024;
     color: rgba(255, 255, 255, 0.7);
     font-family: "Inter", sans-serif;
 }
 
-.std-top{
+.std-top {
     height: 80px;
     background-image: linear-gradient(to bottom, rgba(31, 32, 36, 1), rgba(25, 26, 29, 1));
 }
-.std-bottom{
+
+.std-bottom {
     position: relative;
 }
-.std-content{
+
+.std-content {
     position: relative;
     z-index: 1;
     background-image: linear-gradient(to bottom, rgba(25, 26, 29, 1), rgba(21, 22, 25, 1));
-    border-bottom-right-radius: 40px ;
+    border-bottom-right-radius: 40px;
 }
-.std-b-extra{
+
+.std-b-extra {
     height: 100%;
     position: absolute;
     background-image: linear-gradient(to bottom, rgba(25, 26, 29, 1), rgba(21, 22, 25, 1));
@@ -31,7 +35,7 @@ body{
     bottom: 0;
 }
 
-.title-union{
+.title-union {
     position: absolute;
     left: 0;
     width: 100%;
@@ -41,7 +45,8 @@ body{
     width: auto;
     min-width: 100%;
 }
-.union-side{
+
+.union-side {
     position: absolute;
     height: 50%;
     z-index: 0;
@@ -50,18 +55,20 @@ body{
     transform: translateX(99%);
 }
 
-.roboto{
+.roboto {
     font-family: "Roboto", sans-serif;
 }
-.inter{
+
+.inter {
     font-family: "Inter", sans-serif;
 }
 
-.team-member img{
+.team-member img {
     z-index: 1;
     position: relative;
 }
-.team-member::after{
+
+.team-member::after {
     content: "";
     position: absolute;
     height: 350px;
@@ -73,7 +80,7 @@ body{
     display: none;
 }
 
-.bg-team{
+.bg-team {
     position: absolute;
     height: 350px;
     background-color: #3B82F6;
@@ -83,22 +90,22 @@ body{
     bottom: 133px;
 }
 
-.team-member:first-of-type::after{
+.team-member:first-of-type::after {
     left: 0%;
 }
 
-.team-member:last-of-type::after{
+.team-member:last-of-type::after {
     right: 0%;
 }
 
-.tb-left{
+.tb-left {
     position: relative;
     min-width: 160px;
     background-color: #1f2024;
     border-bottom-right-radius: 40px;
 }
 
-.tb-left-union{
+.tb-left-union {
     position: absolute;
     height: 50%;
     width: auto;
@@ -110,7 +117,7 @@ body{
     background-repeat: no-repeat;
 }
 
-.tb-right-union{
+.tb-right-union {
     position: absolute;
     height: 50%;
     width: auto;
@@ -122,84 +129,103 @@ body{
     background-repeat: no-repeat;
 }
 
-.tb-right{
+.tb-right {
     position: relative;
     min-width: 250px;
     background-color: #1f2024;
     border-bottom-left-radius: 40px;
 }
+
 /* the slides */
 .slick-slide {
     margin: 0 16px;
 }
+
 /* the parent */
 .slick-list {
     margin: 0 -10px;
 }
-.slick-arrow::before{
+
+.slick-arrow::before {
     content: unset !important;
 }
-.carousel-item img{
+
+.carousel-item img {
     aspect-ratio: 1/1;
     object-fit: cover;
 }
 
-.slick-arrow{
+.slick-arrow {
     top: 0;
     transform: translateY(-175px);
 }
 
-.slick-prev{
+.slick-prev {
     left: unset;
     right: 100px;
 }
-.slick-next{
+
+.slick-next {
     left: unset;
     right: 30px;
 }
 
-.slick-arrow:hover rect{
+.slick-arrow:hover rect {
     fill: #3B82F6;
 }
-.slick-arrow:hover path{
+
+.slick-arrow:hover path {
     stroke: #ffffff;
 }
 
-.hero-img{
-    aspect-ratio: 8/9;
+.hero-img {
+    width: 100%;
+    height: calc(100vh - 24px);
     object-fit: cover;
     object-position: top;
     position: relative;
     z-index: 0;
 }
 
-.hs-item{
+.hs-item {
     position: relative;
 }
-@media (max-width: 992px){
-    .tb-right{
+
+.scrollbar-none {
+    scrollbar-width: none;
+}
+
+@media (max-width: 992px) {
+    .tb-right {
         width: 100px;
         min-width: unset;
         border-bottom-left-radius: 20px;
     }
-    .tb-left{
+
+    .tb-left {
         width: 80px;
         min-width: unset;
         border-bottom-right-radius: 20px;
     }
+    .hero-img{
+        height: 80vh;
+    }
 }
-@media (max-width: 768px){
-    .slick-arrow{
+
+@media (max-width: 768px) {
+    .slick-arrow {
         top: 0;
         transform: translateY(-70px);
     }
 }
+
 @media (max-width: 600px) {
-    .team-member::after{
+    .team-member::after {
         width: 100%;
         display: block;
     }
-    .bg-team{
+
+    .bg-team {
         display: none;
     }
 
