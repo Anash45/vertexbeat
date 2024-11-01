@@ -164,14 +164,28 @@ body{
 .slick-arrow:hover path{
     stroke: #ffffff;
 }
+
+.hero-img{
+    aspect-ratio: 7/5;
+    object-fit: cover;
+    object-position: top;
+    position: relative;
+    z-index: 0;
+}
+
+.hs-item{
+    position: relative;
+}
 @media (max-width: 992px){
     .tb-right{
         width: 100px;
         min-width: unset;
+        border-bottom-left-radius: 20px;
     }
     .tb-left{
-        width: 70px;
+        width: 80px;
         min-width: unset;
+        border-bottom-right-radius: 20px;
     }
 }
 @media (max-width: 768px){
